@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_background_02"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="linchange.example.com.waimain.activity.RegisterActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册页"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_name_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="用户名不能为空"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_pass_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="密码不能为空"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+
+    <EditText
+        android:id="@+id/et_pass_again"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_pass_not_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="两次输入密码不一致"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="已有帐号？请" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:background="@drawable/btn_bg2"
+            android:text="登陆" />
+
+    </LinearLayout>
+
+</LinearLayout>

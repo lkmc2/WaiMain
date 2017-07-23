@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_shop_car_name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="购物车中的商品名" />
+
+    <TextView
+        android:id="@+id/tv_shop_car_price"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="商品总价" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_car_sub_product"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_sub" />
+
+        <TextView
+            android:id="@+id/tv_shop_car_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/btn_car_add_product"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_plus" />
+
+    </LinearLayout>
+
+</LinearLayout>

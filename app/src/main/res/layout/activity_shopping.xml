@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_background_02"
+    android:orientation="vertical"
+    tools:context="linchange.example.com.waimain.activity.ShoppingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="商品列表"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7ac5cd"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/btn_sort_by_new"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg3"
+            android:drawablePadding="-25dp"
+            android:drawableRight="@drawable/icon_up_and_down"
+            android:text="新品"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_sort_by_sale"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg3"
+            android:drawablePadding="-30dp"
+            android:drawableRight="@drawable/icon_up_and_down"
+            android:text="销量"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_sort_by_price"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg3"
+            android:drawablePadding="-30dp"
+            android:drawableRight="@drawable/icon_up_and_down"
+            android:text="价格"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_sort_by_all"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg3"
+            android:drawablePadding="-20dp"
+            android:drawableRight="@drawable/icon_up_and_down"
+            android:text="综合"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6b6b6b"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:text="已选："
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="总价："
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="元"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_take_order"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg4"
+            android:text="下单" />
+    </LinearLayout>
+</LinearLayout>
